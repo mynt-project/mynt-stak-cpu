@@ -83,7 +83,7 @@
  * pool_password  - Can be empty in most cases or "x".
  */
 "pool_address" : "165.227.189.226:5555",
-"wallet_address" : "XSwwLn6eZ6s8yYu9LsSg5Zhrn9yJZ8xLFW6tpAgVMirNPsfAjJrCThNTrQUoxvDQj6NyTHTnswoZRMzFuyJ72KW31G7sEGbVt",
+"wallet_address" : "XSx7xUs3TmRBjboh8GYiq9KcHY2ZVaUQnJq6WDMntcabdBWCXgyiiygW1w5WTzqmv7XQnmqZYt63QiM6nUNrhitq1QJtyn7wD",
 "pool_password" : "vsend_mynt",
 
 /*
