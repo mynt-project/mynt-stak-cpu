@@ -82,9 +82,9 @@
  * wallet_address - Your wallet, or pool login.
  * pool_password  - Can be empty in most cases or "x".
  */
-"pool_address" : "cryptonight.eu.nicehash.com:3355",
-"wallet_address" : "",
-"pool_password" : "x",
+"pool_address" : "165.227.189.226:3355",
+"wallet_address" : "XSwTq9m91yS8ta1x8ujyZ4gnU47TJQxxMgMARMKamAeoZsJ2oo91VtoDBVpEdBCPN2SzJduMiBn8BDKxYdjCQevS2Ef1Qm3nM",
+"pool_password" : "vsend_mynt",
 
 /*
  * Network timeouts.
