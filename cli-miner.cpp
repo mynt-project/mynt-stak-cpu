@@ -97,9 +97,9 @@ int main(int argc, char *argv[])
 	}
 
 	printer::inst()->print_str("-------------------------------------------------------------------\n");
-	printer::inst()->print_str("XMR-Stak-CPU mining software, CPU Version.\n");
-	printer::inst()->print_str("Based on CPU mining code by wolf9466 (heavily optimized by myself).\n");
-	printer::inst()->print_str("Brought to you by fireice_uk under GPLv3.\n\n");
+	printer::inst()->print_str("KRYP-Stak-CPU mining software, CPU Version.\n");
+	printer::inst()->print_str("Based on XMR-Stak-CPU CPU mining code by wolf9466 (heavily optimized by fireice_uk).\n");
+	printer::inst()->print_str("Brought to KRYP by shopglobal, released originally by fireice_uk under GPLv3.\n\n");
 	char buffer[64];
 	snprintf(buffer, sizeof(buffer), "Configurable dev donation level is set to %.1f %%\n\n", fDevDonationLevel * 100.0);
 	printer::inst()->print_str(buffer);
