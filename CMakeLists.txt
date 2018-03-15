@@ -1,4 +1,4 @@
-project(xmr-stak-cpu)
+project(kryp-stak-cpu)
 
 cmake_minimum_required(VERSION 2.8.10)
 
@@ -29,7 +29,7 @@ set(EXECUTABLE_OUTPUT_PATH "bin")
 
 file(GLOB SOURCES "crypto/*.c" "crypto/*.cpp" "*.cpp")
 
-add_executable(xmr-stak-cpu ${SOURCES})
+add_executable(kryp-stak-cpu ${SOURCES})
 target_link_libraries(xmr-stak-cpu pthread microhttpd)
  
 
