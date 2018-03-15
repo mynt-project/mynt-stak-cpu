@@ -2,6 +2,7 @@
  * Number of threads. You can configure them below. Cryptonight uses 2MB of memory, so the optimal setting 
  * here is the size of your L3 cache divided by 2. Intel mid-to-high end desktop processors have 2MB of L3
  * cache per physical core. Low end cpus can have 1.5 or 1 MB while Xeons can have 2, 2.5 or 3MB per core.
+ * Adjust the number according to your machine, and fix the below cpu_threads_conf to match # of cores.
  */
 "cpu_thread_num" : 2,
 
@@ -75,16 +76,16 @@
  *                  if a block isn't found within 30 minutes then you might run into nonce collisions. Number
  *                  of threads in this mode is hard-limited to 32.
  */
-"nicehash_nonce" : true,
+"nicehash_nonce" : false,
 
 /*
  * pool_address	  - Pool address should be in the form "pool.supportxmr.com:3333". Only stratum pools are supported.
  * wallet_address - Your wallet, or pool login.
  * pool_password  - Can be empty in most cases or "x".
  */
-"pool_address" : "165.227.189.226:5555",
-"wallet_address" : "XSx7xUs3TmRBjboh8GYiq9KcHY2ZVaUQnJq6WDMntcabdBWCXgyiiygW1w5WTzqmv7XQnmqZYt63QiM6nUNrhitq1QJtyn7wD",
-"pool_password" : "vsend_mynt",
+"pool_address" : "127.0.0.1:5555",
+"wallet_address" : "",
+"pool_password" : "",
 
 /*
  * Network timeouts.
@@ -98,8 +99,8 @@
  * retry_time	- How long should we wait before another connection attempt.
  *                Both values are in seconds.
  */
-"call_timeout" : 10,
-"retry_time" : 10,
+"call_timeout" : 300,
+"retry_time" : 15,
 
 /*
  * Output control.
