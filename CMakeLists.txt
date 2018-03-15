@@ -30,6 +30,6 @@ set(EXECUTABLE_OUTPUT_PATH "bin")
 file(GLOB SOURCES "crypto/*.c" "crypto/*.cpp" "*.cpp")
 
 add_executable(kryp-stak-cpu ${SOURCES})
-target_link_libraries(xmr-stak-cpu pthread microhttpd)
+target_link_libraries(kryp-stak-cpu pthread microhttpd)
  
 
