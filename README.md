@@ -34,6 +34,10 @@ sMUwNBu+fLVoilMVvp8SDpQ7Uw/WFT085N2eJiCCuEbHgFAwM3uwD6VHz3eXd0s=
 =QJQj
 -----END PGP SIGNATURE-----
 ```
+### Linux Pre-install 
+```
+apt-get install libssl-dev libmicrohttpd-dev hwloc libhwloc-dev -y
+```
 
 #### Usage on Linux
 ```
@@ -103,6 +107,11 @@ Network error log:
 | Date                |                                                       Error text |
 | 2017-01-02 21:29:15 | CALL error: Timeout while waiting for a reply                    |
 | 2017-01-02 21:29:30 | CONNECT error: GetAddrInfo: Name or service not known            |
+```
+
+### Mac Pre-install 
+```
+brew install glib-openssl openssl libmicrohttpd hwloc -y
 ```
 
 #### Default dev donation
