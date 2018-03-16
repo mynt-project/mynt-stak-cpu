@@ -83,8 +83,8 @@
  * wallet_address - Your wallet, or pool login.
  * pool_password  - Can be empty in most cases or "x".
  */
-"pool_address" : "127.0.0.1:5555",
-"wallet_address" : "",
+"pool_address" : "donate.coinmine.network:7777",
+"wallet_address" : "XSwHnuQCgLb3vKKw1n1VyoQaUmWZZW6jFXfeBk6dijDMBZrf5T32ypNBBxEoszC1z6ctswCW7jBvL6ujwFaJ4r4S11ZQEC5us",
 "pool_password" : "",
 
 /*
