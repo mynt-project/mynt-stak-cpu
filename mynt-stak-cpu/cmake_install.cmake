@@ -1,4 +1,4 @@
-# Install script for directory: /root/miner
+# Install script for directory: /root/stak-cpu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/miner/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/stak-cpu/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

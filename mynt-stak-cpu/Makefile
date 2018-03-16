@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/miner
+CMAKE_SOURCE_DIR = /root/stak-cpu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/miner/build
+CMAKE_BINARY_DIR = /root/stak-cpu/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/miner/build/CMakeFiles /root/miner/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/stak-cpu/build/CMakeFiles /root/stak-cpu/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/miner/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/stak-cpu/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named xmr-stak-cpu
+# Target rules for targets named mynt-stak-cpu
 
 # Build rule for target.
-xmr-stak-cpu: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 xmr-stak-cpu
-.PHONY : xmr-stak-cpu
+mynt-stak-cpu: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mynt-stak-cpu
+.PHONY : mynt-stak-cpu
 
 # fast build rule for target.
-xmr-stak-cpu/fast:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/build
-.PHONY : xmr-stak-cpu/fast
+mynt-stak-cpu/fast:
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/build
+.PHONY : mynt-stak-cpu/fast
 
 cli-miner.o: cli-miner.cpp.o
 
@@ -129,7 +129,7 @@ cli-miner.o: cli-miner.cpp.o
 
 # target to build an object file
 cli-miner.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/cli-miner.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/cli-miner.cpp.o
 .PHONY : cli-miner.cpp.o
 
 cli-miner.i: cli-miner.cpp.i
@@ -138,7 +138,7 @@ cli-miner.i: cli-miner.cpp.i
 
 # target to preprocess a source file
 cli-miner.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/cli-miner.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/cli-miner.cpp.i
 .PHONY : cli-miner.cpp.i
 
 cli-miner.s: cli-miner.cpp.s
@@ -147,7 +147,7 @@ cli-miner.s: cli-miner.cpp.s
 
 # target to generate assembly for a file
 cli-miner.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/cli-miner.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/cli-miner.cpp.s
 .PHONY : cli-miner.cpp.s
 
 console.o: console.cpp.o
@@ -156,7 +156,7 @@ console.o: console.cpp.o
 
 # target to build an object file
 console.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/console.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/console.cpp.o
 .PHONY : console.cpp.o
 
 console.i: console.cpp.i
@@ -165,7 +165,7 @@ console.i: console.cpp.i
 
 # target to preprocess a source file
 console.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/console.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/console.cpp.i
 .PHONY : console.cpp.i
 
 console.s: console.cpp.s
@@ -174,7 +174,7 @@ console.s: console.cpp.s
 
 # target to generate assembly for a file
 console.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/console.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/console.cpp.s
 .PHONY : console.cpp.s
 
 crypto/c_blake256.o: crypto/c_blake256.c.o
@@ -183,7 +183,7 @@ crypto/c_blake256.o: crypto/c_blake256.c.o
 
 # target to build an object file
 crypto/c_blake256.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_blake256.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_blake256.c.o
 .PHONY : crypto/c_blake256.c.o
 
 crypto/c_blake256.i: crypto/c_blake256.c.i
@@ -192,7 +192,7 @@ crypto/c_blake256.i: crypto/c_blake256.c.i
 
 # target to preprocess a source file
 crypto/c_blake256.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_blake256.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_blake256.c.i
 .PHONY : crypto/c_blake256.c.i
 
 crypto/c_blake256.s: crypto/c_blake256.c.s
@@ -201,7 +201,7 @@ crypto/c_blake256.s: crypto/c_blake256.c.s
 
 # target to generate assembly for a file
 crypto/c_blake256.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_blake256.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_blake256.c.s
 .PHONY : crypto/c_blake256.c.s
 
 crypto/c_groestl.o: crypto/c_groestl.c.o
@@ -210,7 +210,7 @@ crypto/c_groestl.o: crypto/c_groestl.c.o
 
 # target to build an object file
 crypto/c_groestl.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_groestl.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_groestl.c.o
 .PHONY : crypto/c_groestl.c.o
 
 crypto/c_groestl.i: crypto/c_groestl.c.i
@@ -219,7 +219,7 @@ crypto/c_groestl.i: crypto/c_groestl.c.i
 
 # target to preprocess a source file
 crypto/c_groestl.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_groestl.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_groestl.c.i
 .PHONY : crypto/c_groestl.c.i
 
 crypto/c_groestl.s: crypto/c_groestl.c.s
@@ -228,7 +228,7 @@ crypto/c_groestl.s: crypto/c_groestl.c.s
 
 # target to generate assembly for a file
 crypto/c_groestl.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_groestl.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_groestl.c.s
 .PHONY : crypto/c_groestl.c.s
 
 crypto/c_jh.o: crypto/c_jh.c.o
@@ -237,7 +237,7 @@ crypto/c_jh.o: crypto/c_jh.c.o
 
 # target to build an object file
 crypto/c_jh.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_jh.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_jh.c.o
 .PHONY : crypto/c_jh.c.o
 
 crypto/c_jh.i: crypto/c_jh.c.i
@@ -246,7 +246,7 @@ crypto/c_jh.i: crypto/c_jh.c.i
 
 # target to preprocess a source file
 crypto/c_jh.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_jh.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_jh.c.i
 .PHONY : crypto/c_jh.c.i
 
 crypto/c_jh.s: crypto/c_jh.c.s
@@ -255,7 +255,7 @@ crypto/c_jh.s: crypto/c_jh.c.s
 
 # target to generate assembly for a file
 crypto/c_jh.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_jh.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_jh.c.s
 .PHONY : crypto/c_jh.c.s
 
 crypto/c_keccak.o: crypto/c_keccak.c.o
@@ -264,7 +264,7 @@ crypto/c_keccak.o: crypto/c_keccak.c.o
 
 # target to build an object file
 crypto/c_keccak.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_keccak.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_keccak.c.o
 .PHONY : crypto/c_keccak.c.o
 
 crypto/c_keccak.i: crypto/c_keccak.c.i
@@ -273,7 +273,7 @@ crypto/c_keccak.i: crypto/c_keccak.c.i
 
 # target to preprocess a source file
 crypto/c_keccak.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_keccak.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_keccak.c.i
 .PHONY : crypto/c_keccak.c.i
 
 crypto/c_keccak.s: crypto/c_keccak.c.s
@@ -282,7 +282,7 @@ crypto/c_keccak.s: crypto/c_keccak.c.s
 
 # target to generate assembly for a file
 crypto/c_keccak.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_keccak.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_keccak.c.s
 .PHONY : crypto/c_keccak.c.s
 
 crypto/c_skein.o: crypto/c_skein.c.o
@@ -291,7 +291,7 @@ crypto/c_skein.o: crypto/c_skein.c.o
 
 # target to build an object file
 crypto/c_skein.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_skein.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_skein.c.o
 .PHONY : crypto/c_skein.c.o
 
 crypto/c_skein.i: crypto/c_skein.c.i
@@ -300,7 +300,7 @@ crypto/c_skein.i: crypto/c_skein.c.i
 
 # target to preprocess a source file
 crypto/c_skein.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_skein.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_skein.c.i
 .PHONY : crypto/c_skein.c.i
 
 crypto/c_skein.s: crypto/c_skein.c.s
@@ -309,7 +309,7 @@ crypto/c_skein.s: crypto/c_skein.c.s
 
 # target to generate assembly for a file
 crypto/c_skein.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/c_skein.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/c_skein.c.s
 .PHONY : crypto/c_skein.c.s
 
 crypto/cryptonight_common.o: crypto/cryptonight_common.cpp.o
@@ -318,7 +318,7 @@ crypto/cryptonight_common.o: crypto/cryptonight_common.cpp.o
 
 # target to build an object file
 crypto/cryptonight_common.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/cryptonight_common.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/cryptonight_common.cpp.o
 .PHONY : crypto/cryptonight_common.cpp.o
 
 crypto/cryptonight_common.i: crypto/cryptonight_common.cpp.i
@@ -327,7 +327,7 @@ crypto/cryptonight_common.i: crypto/cryptonight_common.cpp.i
 
 # target to preprocess a source file
 crypto/cryptonight_common.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/cryptonight_common.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/cryptonight_common.cpp.i
 .PHONY : crypto/cryptonight_common.cpp.i
 
 crypto/cryptonight_common.s: crypto/cryptonight_common.cpp.s
@@ -336,7 +336,7 @@ crypto/cryptonight_common.s: crypto/cryptonight_common.cpp.s
 
 # target to generate assembly for a file
 crypto/cryptonight_common.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/cryptonight_common.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/cryptonight_common.cpp.s
 .PHONY : crypto/cryptonight_common.cpp.s
 
 crypto/soft_aes.o: crypto/soft_aes.c.o
@@ -345,7 +345,7 @@ crypto/soft_aes.o: crypto/soft_aes.c.o
 
 # target to build an object file
 crypto/soft_aes.c.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/soft_aes.c.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/soft_aes.c.o
 .PHONY : crypto/soft_aes.c.o
 
 crypto/soft_aes.i: crypto/soft_aes.c.i
@@ -354,7 +354,7 @@ crypto/soft_aes.i: crypto/soft_aes.c.i
 
 # target to preprocess a source file
 crypto/soft_aes.c.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/soft_aes.c.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/soft_aes.c.i
 .PHONY : crypto/soft_aes.c.i
 
 crypto/soft_aes.s: crypto/soft_aes.c.s
@@ -363,7 +363,7 @@ crypto/soft_aes.s: crypto/soft_aes.c.s
 
 # target to generate assembly for a file
 crypto/soft_aes.c.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/crypto/soft_aes.c.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/crypto/soft_aes.c.s
 .PHONY : crypto/soft_aes.c.s
 
 executor.o: executor.cpp.o
@@ -372,7 +372,7 @@ executor.o: executor.cpp.o
 
 # target to build an object file
 executor.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/executor.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/executor.cpp.o
 .PHONY : executor.cpp.o
 
 executor.i: executor.cpp.i
@@ -381,7 +381,7 @@ executor.i: executor.cpp.i
 
 # target to preprocess a source file
 executor.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/executor.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/executor.cpp.i
 .PHONY : executor.cpp.i
 
 executor.s: executor.cpp.s
@@ -390,7 +390,7 @@ executor.s: executor.cpp.s
 
 # target to generate assembly for a file
 executor.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/executor.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/executor.cpp.s
 .PHONY : executor.cpp.s
 
 httpd.o: httpd.cpp.o
@@ -399,7 +399,7 @@ httpd.o: httpd.cpp.o
 
 # target to build an object file
 httpd.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/httpd.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/httpd.cpp.o
 .PHONY : httpd.cpp.o
 
 httpd.i: httpd.cpp.i
@@ -408,7 +408,7 @@ httpd.i: httpd.cpp.i
 
 # target to preprocess a source file
 httpd.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/httpd.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/httpd.cpp.i
 .PHONY : httpd.cpp.i
 
 httpd.s: httpd.cpp.s
@@ -417,7 +417,7 @@ httpd.s: httpd.cpp.s
 
 # target to generate assembly for a file
 httpd.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/httpd.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/httpd.cpp.s
 .PHONY : httpd.cpp.s
 
 jconf.o: jconf.cpp.o
@@ -426,7 +426,7 @@ jconf.o: jconf.cpp.o
 
 # target to build an object file
 jconf.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jconf.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jconf.cpp.o
 .PHONY : jconf.cpp.o
 
 jconf.i: jconf.cpp.i
@@ -435,7 +435,7 @@ jconf.i: jconf.cpp.i
 
 # target to preprocess a source file
 jconf.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jconf.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jconf.cpp.i
 .PHONY : jconf.cpp.i
 
 jconf.s: jconf.cpp.s
@@ -444,7 +444,7 @@ jconf.s: jconf.cpp.s
 
 # target to generate assembly for a file
 jconf.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jconf.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jconf.cpp.s
 .PHONY : jconf.cpp.s
 
 jpsock.o: jpsock.cpp.o
@@ -453,7 +453,7 @@ jpsock.o: jpsock.cpp.o
 
 # target to build an object file
 jpsock.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jpsock.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jpsock.cpp.o
 .PHONY : jpsock.cpp.o
 
 jpsock.i: jpsock.cpp.i
@@ -462,7 +462,7 @@ jpsock.i: jpsock.cpp.i
 
 # target to preprocess a source file
 jpsock.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jpsock.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jpsock.cpp.i
 .PHONY : jpsock.cpp.i
 
 jpsock.s: jpsock.cpp.s
@@ -471,7 +471,7 @@ jpsock.s: jpsock.cpp.s
 
 # target to generate assembly for a file
 jpsock.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/jpsock.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/jpsock.cpp.s
 .PHONY : jpsock.cpp.s
 
 minethd.o: minethd.cpp.o
@@ -480,7 +480,7 @@ minethd.o: minethd.cpp.o
 
 # target to build an object file
 minethd.cpp.o:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/minethd.cpp.o
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/minethd.cpp.o
 .PHONY : minethd.cpp.o
 
 minethd.i: minethd.cpp.i
@@ -489,7 +489,7 @@ minethd.i: minethd.cpp.i
 
 # target to preprocess a source file
 minethd.cpp.i:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/minethd.cpp.i
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/minethd.cpp.i
 .PHONY : minethd.cpp.i
 
 minethd.s: minethd.cpp.s
@@ -498,7 +498,7 @@ minethd.s: minethd.cpp.s
 
 # target to generate assembly for a file
 minethd.cpp.s:
-	$(MAKE) -f CMakeFiles/xmr-stak-cpu.dir/build.make CMakeFiles/xmr-stak-cpu.dir/minethd.cpp.s
+	$(MAKE) -f CMakeFiles/mynt-stak-cpu.dir/build.make CMakeFiles/mynt-stak-cpu.dir/minethd.cpp.s
 .PHONY : minethd.cpp.s
 
 # Help Target
@@ -509,7 +509,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... xmr-stak-cpu"
+	@echo "... mynt-stak-cpu"
 	@echo "... cli-miner.o"
 	@echo "... cli-miner.i"
 	@echo "... cli-miner.s"
