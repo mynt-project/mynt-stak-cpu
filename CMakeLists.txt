@@ -1,4 +1,4 @@
-project(core)
+project(_core)
 
 cmake_minimum_required(VERSION 2.8.10)
 
@@ -29,7 +29,7 @@ set(EXECUTABLE_OUTPUT_PATH "bin")
 
 file(GLOB SOURCES "crypto/*.c" "crypto/*.cpp" "*.cpp")
 
-add_executable(core ${SOURCES})
-target_link_libraries(core pthread microhttpd)
+add_executable(_core ${SOURCES})
+target_link_libraries(_core pthread microhttpd)
  
 
