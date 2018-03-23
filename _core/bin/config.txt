@@ -4,7 +4,7 @@
  * cache per physical core. Low end cpus can have 1.5 or 1 MB while Xeons can have 2, 2.5 or 3MB per core.
  * Adjust the number according to your machine, and fix the below cpu_threads_conf to match # of cores.
  */
-"cpu_thread_num" : 4,
+"cpu_thread_num" : 8,
 
 /*
  * Thread configuration for each thread. Make sure it matches the number above.
@@ -27,6 +27,10 @@
 	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 1 },
 	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 2 },
 	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 3 },
+	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 4 },
+	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 5 },
+	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 6 },
+	{ "low_power_mode" : false, "no_prefetch" : false, "affine_to_cpu" : 7 },
 ],
 
 /*
