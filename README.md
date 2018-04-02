@@ -1,6 +1,6 @@
-### XMR-Stak-CPU - Monero mining software
+### mynt-stak-cpu - Mynt mining software
 
-XMR-Stak is a universal Stratum pool miner. This is the CPU-mining version, but I'm planning to release Nvidia and AMD GPU versions too.
+mynts-tak is a universal Stratum pool miner. This is the CPU-mining version, but I'm planning to release Nvidia and AMD GPU versions too.
 
 
 #### Usage on Windows 
